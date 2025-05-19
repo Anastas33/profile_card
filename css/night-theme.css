@@ -1,0 +1,45 @@
+body.night-theme .profile-card {
+    background: #4070f4;
+}
+
+body.night-theme .profile-card .text-data{
+    color: #fff;
+}
+
+body.night-theme .profile-card::before {
+    background-color: #fff;
+}
+
+body.night-theme .image {
+    background-color: #fff;
+}
+
+body.night-theme .image .profile-img {
+    border: 3px solid #4070f4;
+}
+
+body.night-theme #themeToggle {
+    background-color: #4070f4;
+    color: #fff;
+}
+
+body.night-theme #themeToggle:hover {
+    background-color: #0e4bf1;
+}
+
+body.night-theme .buttons .button {
+    background-color: #fff;
+    color: #4070f4;
+}
+
+body.night-theme .buttons .button:hover {
+    background-color: #0e4bf1;
+}
+
+body.night-theme .analytics .data {
+    color: #fff;
+}
+
+body.night-theme .bx-sun {
+    opacity: 0;
+}

@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/night-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
     <div class="profile-card">
+        <button id="themeToggle">Тема</button>
         <div class="image">
             <img src="photo.jpg" alt="photo" class="profile-img">
         </div>
@@ -19,38 +21,40 @@
             <span class="job">Frontend & QA</span>
         </div>
         <div class="media-buttons">
-            <a href="#" class="link viol">
+            <a href="https://www.facebook.com/share/16aBmgcXBf/?mibextid=wwXIfr" class="link viol" target="_blank">
                 <i class='bx bxl-facebook'></i>
             </a>
-            <a href="#" class="link blue">
+            <a href="https://x.com/anastasiasadri2?s=11&t=ShgspRsaxfN9ohclmq0Kng" class="link blue" target="_blank">
                 <i class='bx bxl-twitter'></i>
             </a>
-            <a href="#" class="link pink">
+            <a href="https://www.instagram.com/nastya_shadrinova?igsh=MTRkMWozb2N2YWpqdQ%3D%3D&utm_source=qr" class="link pink" target="_blank">
                 <i class='bx bxl-instagram'></i>
             </a>
-            <a href="#" class="link red">
+            <a href="https://youtube.com/channel/UCZrQ3RtuR6VoSp_uE9aGvnw?si=FnyD5Tpn3UwVEAhP" class="link red" target="_blank">
                 <i class='bx bxl-youtube'></i>
             </a>
         </div>
         <div class="buttons">
-            <button class="button">Subscribe</button>
-            <button class="button">Message</button>
+            <button class="button" id="trigger_like">Like</button>
+            <button class="button" id="trigger_message">Message</button>
         </div>
         <div class="analytics">
             <div class="data">
                 <i class='bx bx-heart'></i>
-                <span class="number">60k</span>
+                <span class="number" id="counter_like">0</span>
             </div>
             <div class="data">
                 <i class='bx bx-message-rounded'></i>
-                <span class="number">20k</span>
+                <span class="number" id="counter_message">0</span>
             </div>
             <div class="data">
                 <i class='bx bx-share'></i>
-                <span class="number">12k</span>
+                <span class="number">0</span>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
